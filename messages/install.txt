@@ -1,0 +1,22 @@
+HornSignal is installed.
+
+This package is a study aid for United States railroad horn practice.
+It is not a substitute for 49 CFR Part 222 or for a railroad operating
+rulebook. Do not imitate these patterns near a railway.
+
+From the Command Palette:
+
+  HornSignal: Show Reference
+      Opens a scratch view with the federal crossing pattern in
+      49 CFR 222.21, GCOR rule 5.8.2, and NORAC Rule 19.
+      Notation: o = short sound, - = long sound.
+
+  HornSignal: Lead Distance
+      Asks for a speed in miles per hour and shows how far a train
+      travels in 15, 20, and 25 seconds (feet and metres).
+
+Files ending in .hornsig use the bundled HornSignal syntax.
+
+There are no default key bindings. See the README for a commented
+example and for the sources that were checked (eCFR 13 November 2026,
+GCOR 9th edition 23 September 2025, NORAC 12th edition 1 January 2024).

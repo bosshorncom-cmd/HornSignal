@@ -1,0 +1,10 @@
+[
+	{
+		"caption": "HornSignal: Show Reference",
+		"command": "horn_signal_show_reference"
+	},
+	{
+		"caption": "HornSignal: Lead Distance",
+		"command": "horn_signal_lead_distance"
+	}
+]

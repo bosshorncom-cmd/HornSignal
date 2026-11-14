@@ -1,0 +1,27 @@
+%YAML 1.2
+---
+# See https://www.sublimetext.com/docs/syntax.html
+name: HornSignal
+file_extensions:
+  - hornsig
+scope: text.hornsignal
+contexts:
+  main:
+    - match: '^[0-9]+\. .+'
+      scope: markup.heading.hornsignal
+    - match: '^[-=]{4,}.*$'
+      scope: comment.line.rule.hornsignal
+    - match: '\b49 CFR [0-9.]+'
+      scope: markup.underline.link.cite.hornsignal
+    - match: '\b(?:Rule 19|rule 5\.8\.[0-9])\b'
+      scope: markup.underline.link.cite.hornsignal
+    - match: '\b(?:GCOR|NORAC|CFR)\b'
+      scope: keyword.other.cite.hornsignal
+    - match: '^\s*\([0-9a-z]\)'
+      scope: entity.name.label.hornsignal
+    # Standalone short-blast "o"; do not match the letter inside words.
+    - match: '\bo\b'
+      scope: keyword.other.short-blast.hornsignal
+    # Standalone long-blast hyphen, not the hyphen in "highway-rail" or "15-20".
+    - match: '(?:^|(?<=\s))-(?=\s|$)'
+      scope: keyword.other.long-blast.hornsignal
